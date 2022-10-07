@@ -1,0 +1,65 @@
+@import url(./fonts/font.scss);
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  user-select: none;
+}
+
+*:focus,
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+//--------windows desktop
+.desktop-main{
+  background-image: url("../img/windows11-bg.jpg");
+  //background: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  .taskbar-bottom{
+    background: #d6e4f8;
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    .tasks-icons{
+      width: fit-content;
+      margin: 0 auto;
+      display: flex;
+      gap: 15px;
+      .task{
+        font-size: 20px;
+        padding: 5px;
+        &:hover{
+          background-color: #fbfdff;
+          border-radius: 5px;
+          .window-icon{
+            color:#074b7c;
+          }
+          .folder-icon{
+            color:#f9c432;
+          }
+        }
+        .window-icon{
+          color:#0780D8;
+        }
+        .folder-icon{
+          color:#ffcc40;
+        }
+      }
+    }
+  }
+}
